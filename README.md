@@ -48,53 +48,58 @@ Please add the following to Visual-Studio-Code's `settings.json`
 
 ```json
 {
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk (LuaLaTeX)",
-      "command": "latexmk",
-      "args": ["-f", "-gg", "-pv", "-lualatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"]
-    },
-    {
-      "name": "pbibtex",
-      "command": "pbibtex",
-      "args": ["%DOCFILE%"]
-    }
-  ],
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "LuaLaTeX",
-      "tools": [
-        "Latexmk (LuaLaTeX)",
-        "pbibtex"
-      ]
-    },
-  ],
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.clean.subfolder.enabled": true,
-  "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk",
-    "*.dvi",
-    "*.synctex.gz"
-  ]
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lualatex",
+            "command": "latexmk",
+            "args": [
+                "-f", "-gg", "-pv-", "-lualatex",
+                "-synctex=1", "-interaction=nonstopmode",
+                "-file-line-error", "%DOC%"
+            ]
+        },
+        {
+            "name": "pbibtex",
+            "command": "pbibtex",
+            "args": ["%DOCFILE%"]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "LuaLaTeX",
+            "tools": [
+                "latexmk-lualatex",
+                "pbibtex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.autoShow": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.dvi",
+        "*.synctex.gz"
+    ]
 }
 ```
 
