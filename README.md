@@ -1,4 +1,4 @@
-# MUDS-Graduation-Thesis
+# MUDS-Graduation-Thesis-Template
 
 This repository distributes templates for graduation theses from the Department of Data Science, Faculty of Data Science, Musashino University.
 
@@ -107,8 +107,8 @@ Please add the following to Visual-Studio-Code's `settings.json`
 ### Clone this repository
 
 ```shell
-$ git clone https://github.com/Rintaro-Fukui/Graduation-Thesis.git
-$ cd ./Graduation-Thesis
+$ git clone https://github.com/Rintaro-Fukui/muds-graduation-thesis-template.git
+$ cd ./muds-graduation-thesis-template
 $ code ./
 ```
 
